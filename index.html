@@ -1,21 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>Довідка</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="style.css">
 <style>
 </style>
-<script src=""></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="script.js"></script>
 <body>
-
-<img src="img_la.jpg" alt="LA" style="width:100%">
-
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
-
+    <div class="container">
+        <h3 class="h3">Довідка Вампір</h3>
+        <div class="static-text">
+            <div class="department">
+                <label for="department-info" class="form-label">
+                    Підрозділ
+                </label>
+                <input type="text" value="2 ВПС (тип С) друга <i>приккшр</i> РУБАК ГВ БАС" 
+                class="form-control" id="department-info" />
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="post">
+                        <label for="post-info" class="post-label">
+                            Позиція
+                        </label>
+                        <input type="text" value="Буревій" class="form-control" id="post-info" />
+                    </div>
+                    <div class="crew">
+                        <label for="crew-info" class="crew-label">
+                            Екіпаж
+                        </label>
+                        <input type="text" value="Внук+2" class="form-control" id="crew-info" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="drone">
+                        <label for="drone-info" class="drone-label">
+                            Засіб
+                        </label>
+                        <input type="text" value="Вампір" class="form-control" id="drone-info" />
+                    </div>
+                    <div class="coord-pref">
+                        <label for="coord-pref-info" class="coord-pref-label">
+                            Координати префікс
+                        </label>
+                        <input type="text" value="37U DQ" class="form-control" id="coord-pref-info" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dynamic-text">
+            <div class="row">
+                <div class="col">
+                    <div class="time">
+                        <label for="time">
+                            Час
+                        </label>
+                        <input type="text" class="form-control" id="time-info" />
+                    </div>
+                    <div class="coord">
+                        <label for="coord">
+                            Координати
+                        </label>
+                        <input type="text" class="form-control" id="coord-info" />
+                    </div>
+                    <div class="fly">
+                        <label for="fly">
+                            № вильоту
+                        </label>
+                        <input type="text" class="form-control" id="fly-info" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="target">
+                        <label for="target">
+                            Ціль
+                        </label>
+                        <input type="text" class="form-control" id="target-info" />
+                    </div>
+                    <div class="bk">
+                        <label for="bk">
+                            Боєприпаси
+                        </label>
+                        <input type="text" class="form-control" id="bk-info" />
+                    </div>
+                    <div class="result">
+                        <label for="result">
+                            Результат
+                        </label>
+                        <input type="text" class="form-control" id="result-info" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary">Згенерувати</button>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
