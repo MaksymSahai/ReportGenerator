@@ -63,12 +63,8 @@
                         </label>
                         <input type="text" class="form-control" id="time-info" />
                     </div>
-                    <div class="coord">
-                        <label for="coord">
-                            Координати
-                        </label>
-                        <input type="text" class="form-control" id="coord-info" />
-                    </div>
+                </div>
+                <div class="col">
                     <div class="fly">
                         <label for="fly">
                             № вильоту
@@ -77,18 +73,45 @@
                     </div>
                 </div>
                 <div class="col">
+                    <div class="coord">
+                        <label for="coord">
+                            Координати
+                        </label>
+                        <input type="text" class="form-control" id="coord-info" />
+                    </div>
+                </div>
+                <div class="col">
                     <div class="target">
                         <label for="target">
                             Ціль
                         </label>
-                        <input type="text" class="form-control" id="target-info" />
+                        <input type="text" class="form-control" 
+                        list="target-timezone" id="target-datalist">
+                        <datalist id="target-timezone">
+                            <option>ІФС</option>
+                            <option>Укриття</option>
+                            <option>Теплова сігнатура</option>
+                            <option>О/С</option>
+                            <option>Склад ПММ</option>
+                            <option>Склад БК</option>
+                            <option>Гуманітарна допомога</option>
+                            <option>Мінування</option>
+                        </datalist>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <div class="bk">
                         <label for="bk">
                             Боєприпаси
                         </label>
                         <input type="text" class="form-control" id="bk-info" />
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <div class="result">
                         <label for="result">
                             Результат
